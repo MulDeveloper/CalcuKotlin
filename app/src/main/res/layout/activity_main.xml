@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="90dp"
+            >
+
+            <TextView
+                android:id="@+id/resultado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:background="#525252"
+                android:gravity="right|top"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:maxLength="21"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/siete"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#71E3F5"
+                android:enabled="true"
+                android:onClick="numero"
+                android:text="7"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/ocho"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF71E3F5"
+                android:onClick="numero"
+                android:text="8"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/nueve"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF71E3F5"
+                android:onClick="numero"
+                android:text="9"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/multi"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:background="#6B70FF"
+                android:onClick="numero"
+                android:text="*"
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/cuatro"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#71E3F5"
+                android:onClick="numero"
+                android:text="4"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/cinco"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#71E3F5"
+                android:onClick="numero"
+                android:text="5"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/seis"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#71E3F5"
+                android:onClick="numero"
+                android:text="6"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/dividir"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:background="#6B70FF"
+                android:onClick="numero"
+                android:text="/ "
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/uno"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#71E3F5"
+                android:onClick="numero"
+                android:text="1"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/dos"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#71E3F5"
+                android:onClick="numero"
+                android:text="2"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/tres"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#71E3F5"
+                android:onClick="numero"
+                android:text="3"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/restar"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:background="#6B70FF"
+                android:onClick="numero"
+                android:text="-"
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/cero"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#71E3F5"
+                android:onClick="numero"
+                android:text="0"
+                android:textSize="36sp" />
+
+
+            <Button
+                android:id="@+id/ce"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:background="#71E3F5"
+                android:onClick="numero"
+                android:text="CE"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/suma"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:background="#6B70FF"
+                android:onClick="numero"
+                android:text="+"
+                android:textSize="36sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/igual"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:enabled="false"
+                android:background="#6B70FF"
+                android:onClick="numero"
+                android:text="="
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/memo"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#6B70FF"
+                android:enabled="false"
+                android:onClick="numero"
+                android:text="M+"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

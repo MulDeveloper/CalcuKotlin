@@ -45,10 +45,12 @@ class MainActivity : AppCompatActivity() {
 
     fun cargarUrl(v: View){
         var substring = url.text.toString().substring(0,7)
-        if (substring.equals("http://") || substring.equals("https://")){
+        if (substring.equals("http://") || substring.equals("https:/")){
+            println(substring)
             web.loadUrl(url.text.toString())
         }
         else{
+            println("1:"+substring)
             web.loadUrl("https://www.google.es/search?q="+url.text.toString())
         }
     }
@@ -88,6 +90,7 @@ class MainActivity : AppCompatActivity() {
 
 
         if (botonPulsado==ce){
+            mem=0.0
             activarBotones(false)
             resultado.text =""
         }
